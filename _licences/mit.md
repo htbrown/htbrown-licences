@@ -15,7 +15,7 @@ conditions:
     - Licence and copyright notice
 ---
 
-MIT licence
+MIT licence  
 Copyright (c) 2021 HTBrown.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
