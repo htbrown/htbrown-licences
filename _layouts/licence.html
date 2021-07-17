@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body>
+<div class="topbar"></div>
+<div class="content">
+    <a href="/" class="back">Go Back</a>
+    <h1>{{ page.title }} / HTBrown Licences</h1>
+    <p>{{ page.description }}</p>
+    <section class="overview">
+        {% if page.permissions %}
+        <div class="permissions">
+            <h3>Permissions</h3>
+            <ul>
+                {% for p in page.permissions %}
+                    <li>{{ p }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        {% if page.limitations %}
+        <div class="limitations">
+            <h3>Limitations</h3>
+            <ul>
+                {% for l in page.limitations %}
+                    <li>{{ l }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        {% if page.conditions %}
+        <div class="conditions">
+            <h3>Conditions</h3>
+            <ul>
+                {% for c in page.conditions %}
+                    <li>{{ c }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </section>
+    <section class="licence-content">
+        {{ content }}
+    </section>
+</div>
+{% include footer.html %}
+</body>
+</html>

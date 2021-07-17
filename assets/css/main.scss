@@ -1,0 +1,26 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+@import 'colours';
+@import 'layout';
+@import 'footer';
+@import 'text';
+@import 'overview';
+@import 'cards';
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  color: $primary;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}

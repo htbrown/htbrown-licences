@@ -1,0 +1,41 @@
+.licence-content {
+  background-color: darken($light, 3%);
+  padding: 10px 20px;
+  border-left: $primary solid 5px;
+}
+
+.card {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: darken($light, 5%);
+  border-bottom: darken($light, 10%) solid 5px;
+  transition: border-bottom .2s;
+  width: 200px;
+
+  i {
+    color: $primary;
+    font-size: 48px;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+a.card {
+  color: black;
+
+  &:hover {
+    border-bottom: $primary solid 5px;
+    cursor: pointer;
+  }
+
+  &:hover:after {
+    transform: scaleX(0);
+  }
+}
+
+.card.centre {
+  text-align: center;
+}

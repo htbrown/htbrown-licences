@@ -1,0 +1,32 @@
+.overview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  div {
+    margin-right: 50px;
+  }
+}
+
+.limitations li:before {
+  content: '✕';
+  color: $red;
+  margin-right: 10px;
+}
+
+.conditions li:before {
+  content: '■';
+  color: $blue;
+  margin-right: 10px;
+}
+
+.permissions li:before {
+  content: '✓';
+  color: $green;
+  margin-right: 10px;
+}

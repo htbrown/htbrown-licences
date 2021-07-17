@@ -1,0 +1,22 @@
+---
+layout: default
+title: Home
+description: Licences used by me, what they allow you to do and other information.
+---
+<h1>HTBrown Licences</h1>
+<p>{{ site.description }}</p>
+
+<section class="licences">
+    {% for l in site.licences %}
+        <a class="card centre" href="{{ l.url }}">
+            <i class="{{ l.icon }}"></i>
+            <h2>{{ l.title }}</h2>
+            <p>{{ l.description }}</p>
+        </a>
+    {% endfor %}
+    <a href="/report" class="card centre">
+        <i class="fas fa-exclamation-triangle"></i>
+        <h2>Report</h2>
+        <p>Someone violating a licence? Email me!</p>
+    </a>
+</section>
